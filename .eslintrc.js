@@ -55,6 +55,9 @@ module.exports = {
         "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
         "no-param-reassign": "off",
         "no-undef": "off",
+        "react/no-array-index-key": "off",
+        "operator-linebreak": "off",
+        "implicit-arrow-linebreak": "off",
     },
     globals: {
         __IS_DEV__: true,
