@@ -41,7 +41,7 @@ module.exports = {
             "warn",
             {
                 markupOnly: true,
-                ignoreAttribute: ["data-testid", "to"],
+                ignoreAttribute: ["data-testid", "to", "target"],
             },
         ],
         quotes: "off",
@@ -58,6 +58,7 @@ module.exports = {
         "react/no-array-index-key": "off",
         "operator-linebreak": "off",
         "implicit-arrow-linebreak": "off",
+        "arrow-body-style": "off",
     },
     globals: {
         __IS_DEV__: true,
