@@ -577,6 +577,12 @@
       "userId": "1",
       "text": "new comment",
       "id": "iC8yoZ2"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "text": "scala comment",
+      "id": "c_9RPtH"
     }
   ],
   "users": [
