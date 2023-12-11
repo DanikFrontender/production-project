@@ -4,11 +4,7 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: [
-        "plugin:react/recommended",
-        "airbnb",
-        "plugin:i18next/recommended",
-    ],
+    extends: ["plugin:react/recommended", "airbnb", "plugin:i18next/recommended"],
     parser: "@typescript-eslint/parser",
     parserOptions: {
         ecmaFeatures: {
@@ -44,10 +40,21 @@ module.exports = {
         "import/no-extraneous-dependencies": "off",
         "no-underscore-dangle": "off",
         "i18next/no-literal-string": [
-            "warn",
+            "error",
             {
                 markupOnly: true,
-                ignoreAttribute: ["data-testid", "to", "target"],
+                ignoreAttribute: [
+                    "as",
+                    "role",
+                    "data-testid",
+                    "to",
+                    "target",
+                    "justify",
+                    "align",
+                    "border",
+                    "direction",
+                    "gap",
+                ],
             },
         ],
         quotes: "off",
@@ -66,6 +73,8 @@ module.exports = {
         "implicit-arrow-linebreak": "off",
         "arrow-body-style": "off",
         "daniyar-plugin/path-checker": "error",
+        "object-curly-newline": "off",
+        "linebreak-style": "off",
     },
     globals: {
         __IS_DEV__: true,
